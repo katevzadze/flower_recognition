@@ -43,7 +43,7 @@
             <button type="submit">Предсказать</button>
 
         </form>
-        {% if result}
+        {% if result%}
            <h2>Результат</h2>
            <p> Вид: {{result['class']}}</p>
            <p>Вероятность: {{result['probability'] | round(2) }}%</p>
