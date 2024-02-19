@@ -29,7 +29,7 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'file' not in request.files:
-        return redirect(redirect.url)
+        return redirect(request.url)
     file = request.files['file']
 
     if file.filename == '':
